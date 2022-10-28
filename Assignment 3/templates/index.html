@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 3</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <th>Jenis</th>
+            <th>Value</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Water</td>
+            <td>{{ .water }} meter(s)</td>
+            <td>{{ .waterStatus }}</td>
+        </tr>
+        <tr>
+            <td>Wind</td>
+            <td>{{ .wind }} m/s</td>
+            <td>{{ .windStatus }}</td>
+        </tr>
+      </table> 
+<script type="text/javascript">
+    window.setTimeout(function(){ document.location.reload(true); }, 15000);
+</script>
+</div>
+</body>
+</html>
